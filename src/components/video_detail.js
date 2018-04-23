@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const VideoDetail = ({video}) => {
+export default ({video}) => {
     if (!video) {
         return <div>Loading...</div>;
     }
@@ -11,7 +11,7 @@ const VideoDetail = ({video}) => {
     return (
         <div className="video-detail col-md-8">
             <div className="embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src={url} title={video.etag} />
+                <iframe className="embed-responsive-item" src={url} title={video.etag}/>
             </div>
             <div className="details">
                 <div>{video.snippet.title}</div>
@@ -20,5 +20,3 @@ const VideoDetail = ({video}) => {
         </div>
     );
 };
-
-export default VideoDetail;
