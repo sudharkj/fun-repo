@@ -1,5 +1,3 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
 # keys
 .env
 
@@ -11,6 +9,17 @@
 
 # production
 /build
+package-lock.json
+
+# app
+/public
+/src
+README.md
+package.json
+
+# gh-pages
+/_site
+Gemfile.lock
 
 # ide
 /.idea
